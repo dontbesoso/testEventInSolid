@@ -9,55 +9,42 @@ using System.Runtime.InteropServices.ComTypes;
 using System.Runtime.InteropServices;
 using System.Threading;
 using System.Reflection;
-//using SolidEdge.ApplicationEvents.Properties;
 
 namespace ConsoleApp2
 {
     class Program
     {
-        //private static SynchronizationContext _uiContext;
         
         static void Main(string[] args)
         {
             SolidEdgeFramework.Application application = null;
-            SolidEdgeFramework.Application _application = null;
-            SolidEdgeFramework.ISEApplicationEvents_Event _applicationEvents;
-
-            //SolidEdgeFramework.ISEAccelerators accelerator = null;
-
-            //_uiContext = SynchronizationContext.Current;
+            SolidEdgeFramework.ISEApplicationEvents_Event applicationEvents;
 
             try
             {
                 application = (SolidEdgeFramework.Application)Marshal.GetActiveObject("SolidEdge.Application");
                 application.Visible = true;
                 
-                _applicationEvents = (SolidEdgeFramework.ISEApplicationEvents_Event)application.ApplicationEvents;
+                applicationEvents = (SolidEdgeFramework.ISEApplicationEvents_Event)application.ApplicationEvents;
                 
-                _applicationEvents.AfterDocumentPrint += ISEApplicationEvents_AfterDocumentPrint;
-                _applicationEvents.BeforeDocumentPrint += ISEApplicationEvents_BeforeDocumentPrint;
-
-                //ConnectApplicationEvents();
+                applicationEvents.AfterDocumentPrint += ISEApplicationEvents_AfterDocumentPrint;
+                applicationEvents.BeforeDocumentPrint += ISEApplicationEvents_BeforeDocumentPrint;
 
             }
             catch (System.Exception ex)
             {
                 Console.WriteLine(ex);
             }
-
             Console.ReadKey();
-
         }
 
         private static void ISEApplicationEvents_AfterDocumentPrint(object theDocument, int hDC, ref double ModelToDC, ref int Rect)
         {
-            //LogEvent(MethodInfo.GetCurrentMethod(), new object[] { theDocument, hDC, ModelToDC, Rect });
             Console.WriteLine("Po drukowaniu");
         }
 
         private static void ISEApplicationEvents_BeforeDocumentPrint(object theDocument, int hDC, ref double ModelToDC, ref int Rect)
         {
-            //LogEvent(MethodInfo.GetCurrentMethod(), new object[] { theDocument, hDC, ModelToDC, Rect });
             Console.WriteLine("Przed drukowaniem");
         }
     }

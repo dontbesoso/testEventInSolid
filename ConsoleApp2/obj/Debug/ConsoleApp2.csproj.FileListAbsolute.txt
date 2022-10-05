@@ -8,3 +8,13 @@ C:\Users\Adam\source\repos\ConsoleApp2\ConsoleApp2\obj\Debug\ConsoleApp2.csproj.
 C:\Users\Adam\source\repos\ConsoleApp2\ConsoleApp2\obj\Debug\ConsoleApp2.exe
 C:\Users\Adam\source\repos\ConsoleApp2\ConsoleApp2\obj\Debug\ConsoleApp2.pdb
 C:\Users\Adam\source\repos\ConsoleApp2\ConsoleApp2\bin\Debug\Interop.SolidEdgeFramework.dll
+C:\Users\hulewicz\Documents\Projekty\C#\testEventInSolid\ConsoleApp2\bin\Debug\ConsoleApp2.exe.config
+C:\Users\hulewicz\Documents\Projekty\C#\testEventInSolid\ConsoleApp2\bin\Debug\ConsoleApp2.exe
+C:\Users\hulewicz\Documents\Projekty\C#\testEventInSolid\ConsoleApp2\bin\Debug\ConsoleApp2.pdb
+C:\Users\hulewicz\Documents\Projekty\C#\testEventInSolid\ConsoleApp2\bin\Debug\Interop.SolidEdgeFramework.dll
+C:\Users\hulewicz\Documents\Projekty\C#\testEventInSolid\ConsoleApp2\obj\Debug\ConsoleApp2.csproj.AssemblyReference.cache
+C:\Users\hulewicz\Documents\Projekty\C#\testEventInSolid\ConsoleApp2\obj\Debug\Interop.SolidEdgeFramework.dll
+C:\Users\hulewicz\Documents\Projekty\C#\testEventInSolid\ConsoleApp2\obj\Debug\ConsoleApp2.csproj.ResolveComReference.cache
+C:\Users\hulewicz\Documents\Projekty\C#\testEventInSolid\ConsoleApp2\obj\Debug\ConsoleApp2.csproj.CoreCompileInputs.cache
+C:\Users\hulewicz\Documents\Projekty\C#\testEventInSolid\ConsoleApp2\obj\Debug\ConsoleApp2.exe
+C:\Users\hulewicz\Documents\Projekty\C#\testEventInSolid\ConsoleApp2\obj\Debug\ConsoleApp2.pdb
